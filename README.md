@@ -3,7 +3,7 @@
 The stock ticker is a low power “glanceable” stock quote display built on an ESP32 and a Waveshare 2.9 tri‑color e‑paper panel. It fetches live quote data from Finnhub over HTTPS, then parses JSON, and finally renders a price and daily change with color cues.
 
 ## Demo
-- Photo/video: [add link or drop an image in /docs and embed it here]
+- Photo/video: https://drive.google.com/file/d/1Ch2R4mWahz-3-0Cq4hb9GrInZbsJ_bEy/view?usp=sharing    
 
 ## Why this project
 I wanted an embedded firmware project that allowed me to bridge the gap between software and hardware interface. I have always been curious about these things but have never done any individual work on them. I also wanted to learn how to manage constraints like networking in constrained environments, TLS tradeoffs, peripheral timing, and a clean UI on a slow refresh display which will be useful later on.
@@ -46,7 +46,7 @@ I wanted an embedded firmware project that allowed me to bridge the gap between 
 ## Results
 - Stable Wi‑Fi connectivity on `IllinoisNet_Guest`
 - Successful outbound HTTP and Finnhub HTTPS requests
-- Clean e‑paper rendering: ticker, price, and day change (red for negative)
+- Clean e‑paper rendering: ticker, price, and day change (red for negative, green for positive)
 
 ## Next improvements
 - Deep sleep + timed refresh for battery operation
